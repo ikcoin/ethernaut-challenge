@@ -37,3 +37,17 @@ contract GatekeeperOne {
         return true;
     }
 }
+
+/*
+// brute force the gas costs
+const MOD = 8191
+const gasToUse = 800000
+for(let i = 0; i < MOD; i++) {
+  try {
+    tx = contractCall(gateKey, gasToUse + i, {
+      gasLimit: `950000`
+    });
+    break;
+  } catch {}
+}
+*/
